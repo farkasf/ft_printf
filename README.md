@@ -1,7 +1,7 @@
 # ft_printf
 *Because ft_putnbr() and ft_putstr() aren’t enough*
 
-This project is about recoding the <code>printf()</code> function from libc. Calling the <code>ft_printf()</code> function allows us to format and display text, numbers, and other values.
+This project is about recoding the <code>printf()</code> function from the libc standard library. Calling the <code>ft_printf()</code> function allows us to format and display text, numbers, and other values.
 
 <p align="center">
   <img width="256" height="256" src="resources/Hotpot_binary_typewriter.png">
