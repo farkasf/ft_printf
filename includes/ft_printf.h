@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 01:58:59 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 02:08:14 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 17:36:15 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ int	ft_get_param(va_list args, const char format);
 
 int	ft_print_c(va_list *args);
 int	ft_print_s(va_list *args);
-int	ft_percent();
+int	ft_percent(void);
 
 #endif

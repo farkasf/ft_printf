@@ -31,7 +31,7 @@ int	ft_get_param(va_list args, const char format)
 	else if (format == 'x' || format == 'X')
 		length += ft_print_xX(args);
 	else if (format == '%')
-		length += ft_print_percent();
+		length += ft_print_percent(void);
 	return (length);
 }
 

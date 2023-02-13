@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 01:53:23 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 02:07:03 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 17:36:51 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_print_c(va_list *args)
 int	ft_print_s(va_list *args)
 {
 	char	*str;
-	int	count;
+	int		count;
 
 	count = 1;
 	str = va_arg(*args, char *);
@@ -35,7 +35,7 @@ int	ft_print_s(va_list *args)
 	return (count);
 }
 
-int	ft_percent()
+int	ft_percent(void)
 {
 	ft_putchar_fd('%', 1);
 	return (1);
