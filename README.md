@@ -11,7 +11,7 @@ This project is about recoding the <code>printf()</code> function from the libc 
 
 <code>int ft_printf(const char *, ...)</code>
 
-### Handled convertions
+### Handled conversions
 
 <code>cspdiuxX%</code>
 
