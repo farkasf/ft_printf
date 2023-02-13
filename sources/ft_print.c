@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 01:20:10 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 01:43:22 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 21:18:40 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int	ft_get_param(va_list args, const char format)
 	else if (format == 'u')
 		length += ft_print_u(args);
 	else if (format == 'x' || format == 'X')
-		length += ft_print_xX(args);
+		length += ft_print_xX(args, format);
 	else if (format == '%')
-		length += ft_print_percent(void);
+		length += ft_print_percent();
 	return (length);
 }
 
