@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 02:20:22 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 21:31:29 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 21:50:43 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,14 +47,14 @@ int	ft_puthex(unsigned int num, const char format)
 	}
 }
 
-int	ft_numlen(unsigned int num)
+int	ft_hexlen(unsigned int num)
 {
 	int	len;
 
 	len = 0;
 	while (num)
 	{
-		num = num / 10;
+		num = num / 16;
 		len++;
 	}
 	return (len);
@@ -73,5 +73,5 @@ int	ft_print_xX(va_list *args, const char format)
 	}
 	else
 		ft_puthex(num, format);
-	return (ft_numlen(num));
+	return (ft_hexlen(num));
 }

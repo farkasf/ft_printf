@@ -6,11 +6,24 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 21:27:50 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 21:43:36 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 21:51:25 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
+
+int	ft_numlen(unsigned int num)
+{
+	int	len;
+
+	len = 0;
+	while (num)
+	{
+		num = num / 10;
+		len++;
+	}
+	return (len);
+}
 
 char	*ft_uitoa(unsigned int num)
 {
