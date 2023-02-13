@@ -1,5 +1,5 @@
 NAME = libftprintf.a
-SRC = ft_print.c \
+SRC = ft_printf.c \
 	ft_cs.c \
 	ft_dixX.c \
 	ft_up.c
