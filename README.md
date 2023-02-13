@@ -9,9 +9,9 @@ This project is about recoding the <code>printf()</code> function from the libc 
 
 ### Function prototype
 
-<code>int	ft_printf(const char *, ...)</code>
+<code>int ft_printf(const char *, ...)</code>
 
-### Handled prototypes
+### Handled convertions
 
 <code>cspdiuxX%</code>
 
