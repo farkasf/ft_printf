@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 02:20:22 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 21:50:43 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 21:58:43 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int	ft_hexlen(unsigned int num)
 	len = 0;
 	while (num)
 	{
-		num = num / 16;
+		num /= 16;
 		len++;
 	}
 	return (len);

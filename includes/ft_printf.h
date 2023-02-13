@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 01:58:59 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 21:52:49 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 22:07:29 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,8 @@ int	ft_print_xX(va_list *args, const char format);
 int	ft_numlen(unsigned int num);
 char	*ft_uitoa(unsigned int num);
 int	ft_print_u(va_list *args);
+int	ft_ptrlen(unsigned long long ptr);
+void	ft_putptr(unsigned long long int ptr);
+int	ft_print_p(va_list *args);
 
 #endif
