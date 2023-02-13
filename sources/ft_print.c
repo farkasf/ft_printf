@@ -6,14 +6,13 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 01:20:10 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 21:26:19 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 23:12:47 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
-#include <unistd.h>
+#include "ft_printf.h"
 
-int	ft_get_param(va_list args, const char format)
+int	ft_get_param(va_list *args, const char format)
 {
 	int	length;
 
@@ -45,12 +44,12 @@ int	ft_printf(const char *input, ...)
 	str = (char *)input;
 	i = 0;
 	return_length = 0;
-	va_start(args, str);
+	va_start(args, input);
 	while (str[i])
 	{
 		if (str[i] == '%')
 		{
-			return_length += ft_get_param(args, str[i + 1]);
+			return_length += ft_get_param(&args, str[i + 1]);
 			i += 2;
 		}
 		else

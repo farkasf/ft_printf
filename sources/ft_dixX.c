@@ -6,11 +6,11 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 02:20:22 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 21:58:43 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 23:15:27 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_print_di(va_list *args)
 {
@@ -20,13 +20,13 @@ int	ft_print_di(va_list *args)
 
 	num = va_arg(*args, int);
 	str = ft_itoa(num);
-	count = ft_strlen(num);
-	ft_putstr(str, 1);
+	count = ft_strlen(str);
+	ft_putstr_fd(str, 1);
 	free (str);
 	return (count);
 }
 
-int	ft_puthex(unsigned int num, const char format)
+void	ft_puthex(unsigned int num, const char format)
 {
 	if (num >= 16)
 	{
@@ -62,13 +62,12 @@ int	ft_hexlen(unsigned int num)
 
 int	ft_print_xX(va_list *args, const char format)
 {
-	int	count;
 	unsigned int	num;
 
 	num = va_arg(*args, unsigned int);
 	if (num == 0)
 	{
-		ft_putchar_fd("0", 1);
+		ft_putchar_fd('0', 1);
 		return (1);
 	}
 	else

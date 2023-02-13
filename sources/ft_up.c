@@ -6,11 +6,11 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 21:27:50 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/13 22:07:32 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/13 23:11:26 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_numlen(unsigned int num)
 {
@@ -54,7 +54,7 @@ int	ft_print_u(va_list *args)
 	count = 0;
 	if (num == 0)
 	{
-		fd_putchar_fd("0", 1);
+		ft_putchar_fd('0', 1);
 		return (1);
 	}
 	else
@@ -106,7 +106,7 @@ int	ft_print_p(va_list *args)
 	count = 2;
 	if (ptr == 0)
 	{
-		ft_putchar_fd("0", 1);
+		ft_putchar_fd('0', 1);
 		return (3);
 	}
 	else
