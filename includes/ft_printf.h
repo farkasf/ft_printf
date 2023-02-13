@@ -23,6 +23,6 @@ int	ft_get_param(va_list args, const char format);
 
 int	ft_print_c(va_list *args);
 int	ft_print_s(va_list *args);
-int	ft_percent(void);
+int	ft_print_percent(void);
 
 #endif

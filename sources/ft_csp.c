@@ -35,7 +35,7 @@ int	ft_print_s(va_list *args)
 	return (count);
 }
 
-int	ft_percent(void)
+int	ft_print_percent(void)
 {
 	ft_putchar_fd('%', 1);
 	return (1);
