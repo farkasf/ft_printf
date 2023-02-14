@@ -34,7 +34,7 @@ char	*ft_uitoa(unsigned int num)
 int	ft_print_u(va_list *args)
 {
 	char	*str;
-	unsigned int	num;
+	unsigned int		num;
 	int		count;
 
 	num = va_arg(*args, unsigned int);

@@ -31,7 +31,7 @@ int		ft_print_percent(void);
 int		ft_numlen(unsigned int num);
 int		ft_print_di(va_list *args);
 int		ft_hexlen(unsigned int num);
-int		ft_print_xX(va_list *args, const char format);
+int		ft_print_x(va_list *args, const char format);
 int		ft_print_u(va_list *args);
 int		ft_ptrlen(unsigned long long ptr);
 int		ft_print_p(va_list *args);

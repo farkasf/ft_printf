@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 SRC = ft_printf.c \
 	ft_cs.c \
-	ft_dixX.c \
+	ft_dix.c \
 	ft_up.c
 LIBFT = libft/libft.a
 OBJS = $(SRC:.c=.o)
