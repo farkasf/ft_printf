@@ -12,23 +12,10 @@
 
 #include "ft_printf.h"
 
-int	ft_numlen(unsigned int num)
-{
-	int	len;
-
-	len = 0;
-	while (num)
-	{
-		num /= 10;
-		len++;
-	}
-	return (len);
-}
-
 char	*ft_uitoa(unsigned int num)
 {
 	char	*str;
-	int	len;
+	int		len;
 
 	len = ft_numlen(num);
 	str = (char *)malloc((len + 1) * sizeof(char));
@@ -47,8 +34,8 @@ char	*ft_uitoa(unsigned int num)
 int	ft_print_u(va_list *args)
 {
 	char	*str;
+	unsigned int	num;
 	int		count;
-	unsigned int		num;
 
 	num = va_arg(*args, unsigned int);
 	count = 0;
@@ -99,7 +86,7 @@ void	ft_putptr(unsigned long long int ptr)
 int	ft_print_p(va_list *args)
 {
 	unsigned long long int	ptr;
-	int	count;
+	int						count;
 
 	ptr = va_arg(*args, unsigned long long int);
 	ft_putstr_fd("0x", 1);
