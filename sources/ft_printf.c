@@ -6,13 +6,13 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 01:20:10 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/14 15:32:28 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/14 16:17:12 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_get_param(va_list *args, const char format)
+int	ft_get_param(va_list *args, char format)
 {
 	int	length;
 
@@ -34,7 +34,7 @@ int	ft_get_param(va_list *args, const char format)
 	return (length);
 }
 
-int	ft_printf(const char *input, ...)
+int	ft_printf (const char *input, ...)
 {
 	va_list	args;
 	char	*str;

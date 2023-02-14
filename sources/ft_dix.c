@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dixX.c                                          :+:      :+:    :+:   */
+/*   ft_dix.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 02:20:22 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/14 15:32:35 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/02/14 16:17:21 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_print_di(va_list *args)
 	return (count);
 }
 
-void	ft_puthex(unsigned int num, const char format)
+void	ft_puthex(unsigned int num, char format)
 {
 	if (num >= 16)
 	{
@@ -60,7 +60,7 @@ int	ft_hexlen(unsigned int num)
 	return (len);
 }
 
-int	ft_print_x(va_list *args, const char format)
+int	ft_print_x(va_list *args, char format)
 {
 	unsigned int	num;
 
