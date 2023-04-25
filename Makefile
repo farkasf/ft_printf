@@ -7,7 +7,7 @@ LIBFT = libft/libft.a
 OBJS = $(SRC:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 CC = cc
-INCL = ft_printf.h
+INCL = .
 RLIB = ranlib
 CLIB = ar rc
 R = rm -f
