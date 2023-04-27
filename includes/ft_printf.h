@@ -6,7 +6,7 @@
 /*   By: ffarkas <ffarkas@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 01:58:59 by ffarkas           #+#    #+#             */
-/*   Updated: 2023/02/14 16:17:30 by ffarkas          ###   ########.fr       */
+/*   Updated: 2023/04/27 19:07:17 by ffarkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdarg.h>
-# include "./libft/libft.h"
+# include "../libft/libft.h"
 
 void	ft_putptr(unsigned long long int ptr);
 void	ft_puthex(unsigned int num, char format);

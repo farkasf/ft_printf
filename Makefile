@@ -1,24 +1,26 @@
 NAME = libftprintf.a
-SRC = ft_printf.c \
-	ft_cs.c \
-	ft_dix.c \
-	ft_up.c
+SRC = ./sources/ft_printf.c \
+	./sources/ft_cs.c \
+	./sources/ft_dix.c \
+	./sources/ft_up.c
 LIBFT = libft/libft.a
 OBJS = $(SRC:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 CC = cc
-INCL = .
+INCL = ./includes
 RLIB = ranlib
 CLIB = ar rc
 R = rm -f
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(CFLAGS) -c $(SRC) -I $(INCL)
+$(NAME): $(OBJS)
 	make -C ./libft
 	cp $(LIBFT) ${NAME}
 	$(CLIB) $(NAME) $(OBJS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@ -I $(INCL)
 
 clean:
 	${MAKE} clean -C ./libft
